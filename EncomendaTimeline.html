@@ -1,0 +1,15 @@
+<section id="cd-timeline" class="cd-container" ng-controller="EncomendaController as encomendaCtrl">
+	<div class="cd-timeline-block" ng-repeat="evento in encomendaCtrl.encomenda.eventosCorreios">
+		<div class="cd-timeline-img cd-encomenda">
+			<!--<img src="img/cd-icon-picture.svg" alt="Picture">-->
+			<img src="{{evento.imgSrc}}" alt="Picture">
+		</div> <!-- cd-timeline-img -->
+
+		<div class="cd-timeline-content">
+			<h2>{{evento.descricao}}</h2>
+			<p>{{evento.detalhe}}</p>
+			<a href="#0" class="cd-read-more">Detalhes</a>
+			<span class="cd-date">{{evento.data}} : {{evento.hora}}</span>
+		</div> <!-- cd-timeline-content -->
+	</div> <!-- cd-timeline-block -->
+</section> <!-- cd-timeline -->
